@@ -1,69 +1,79 @@
 {
-    "window.newWindowProfile": "Default",
-    // File & Editor Behavior
-    "files.autoSave": "onFocusChange",
-    "files.exclude": {
-      "**/.git": true, // Git metadata
-      "**/.DS_Store": true, // macOS junk files
-      "**/Thumbs.db": true, // Windows junk files
-      "**/.idea": true, // JetBrains IDE configs
-      "**/*.log": true, // Log files
-      "**/.env": true // Hide environment files (security)
-    },
-    "files.watcherExclude": {
-      "**/.git/objects/**": true, // Git internals
-      "**/.cache/**": true, // Build/system caches
-      "**/.tmp/**": true, // Temporary files
-      "**/tmp/**": true // Alternate temp dirs
-    },
-    "explorer.confirmDelete": false,
-    "diffEditor.ignoreTrimWhitespace": false,
-    // Editor UI & Experience
-    "editor.fontSize": 18,
-    "editor.fontFamily": "'Fira Code'",
-    "editor.fontLigatures": true,
-    "editor.lineHeight": 24,
-    "editor.smoothScrolling": true,
-    "editor.minimap.scale": 2,
-    "editor.minimap.renderCharacters": false,
-    "editor.minimap.autohide": true,
-    "editor.cursorBlinking": "expand",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.cursorWidth": 3,
-    "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": "active",
-    "editor.renderWhitespace": "selection",
-    "editor.renderControlCharacters": true,
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 80,
-    "editor.rulers": [
-      80
-    ],
-    "editor.wrappingIndent": "same",
-    "editor.detectIndentation": false,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true,
-    "editor.autoClosingQuotes": "always",
-    "editor.autoClosingBrackets": "always",
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.parameterHints.enabled": true,
-    "workbench.colorTheme": "Atom One Dark",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "none",
-    "workbench.editor.enablePreview": false,
-    "workbench.editor.showTabs": "multiple",
-    "workbench.editor.highlightModifiedTabs": true,
-    "workbench.list.smoothScrolling": true,
-    "workbench.tree.indent": 16,
-    "window.zoomLevel": 1,
-    "window.title": "${dirty}${activeEditorShort}${separator}${activeRepositoryBranchName}",
-    // Terminal
-    "terminal.integrated.fontSize": 18,
-    "terminal.integrated.fontFamily": "'Consolas'",
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.cursorStyle": "underline",
-    "terminal.integrated.smoothScrolling": true,
-    "files.insertFinalNewline": true
-  }
+  "window.newWindowProfile": "Default",
+  // File & Editor Behavior
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    "**/.git": true, // Git metadata
+    "**/.DS_Store": true, // macOS junk files
+    "**/Thumbs.db": true, // Windows junk files
+    "**/.idea": true, // JetBrains IDE configs
+    "**/*.log": true, // Log files
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true, // Git internals
+    "**/.cache/**": true, // Build/system caches
+    "**/.tmp/**": true, // Temporary files
+    "**/tmp/**": true // Alternate temp dirs
+  },
+  "files.associations": {
+    ".env": "dotenv",
+    ".env.example": "dotenv",
+  },
+  "explorer.confirmDelete": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  // Editor UI & Experience
+  "editor.fontSize": 18,
+  "editor.fontFamily": "'Fira Code'",
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 24,
+  "editor.smoothScrolling": true,
+  "editor.minimap.scale": 2,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.autohide": true,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorWidth": 3,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.renderWhitespace": "selection",
+  "editor.renderControlCharacters": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 80,
+  "editor.rulers": [
+    80
+  ],
+  "editor.wrappingIndent": "same",
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.autoClosingQuotes": "always",
+  "editor.autoClosingBrackets": "always",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.parameterHints.enabled": true,
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.list.smoothScrolling": true,
+  "workbench.tree.indent": 16,
+  "window.zoomLevel": 1,
+  "window.title": "${dirty}${activeEditorShort}${separator}${activeRepositoryBranchName}",
+  // Terminal
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.fontFamily": "'Consolas'",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.smoothScrolling": true,
+  "files.insertFinalNewline": true,
+  // copilot
+  // Disable automatic triggering of rename suggestions by GitHub Copilot
+  "github.copilot.renameSuggestions.triggerAutomatically": false,
+  "github.copilot.enable": {
+    "*": true,
+    "dotenv": false,
+  },
+}
