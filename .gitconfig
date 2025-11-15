@@ -1,0 +1,8 @@
+[user]
+	name = dibinantonyjose
+	email = dibinantonyjose@gmail.com
+[alias]
+	p = pull
+	a = add .
+	l = log --oneline
+	cm = commit -m
