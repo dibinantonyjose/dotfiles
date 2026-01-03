@@ -7,7 +7,7 @@
     "**/.DS_Store": true, // macOS junk files
     "**/Thumbs.db": true, // Windows junk files
     "**/.idea": true, // JetBrains IDE configs
-    "**/*.log": true, // Log files
+    "**/*.log": true // Log files
   },
   "files.watcherExclude": {
     "**/.git/objects/**": true, // Git internals
@@ -18,18 +18,19 @@
   "files.associations": {
     ".env": "dotenv",
     ".env.example": "dotenv",
+    "*.mdx": "markdown"
   },
   "explorer.confirmDelete": false,
   "diffEditor.ignoreTrimWhitespace": false,
   // Editor UI & Experience
-  "editor.fontSize": 18,
+  "editor.fontSize": 14,
   "editor.fontFamily": "'Fira Code'",
   "editor.fontLigatures": true,
   "editor.lineHeight": 24,
   "editor.smoothScrolling": true,
   "editor.minimap.scale": 2,
   "editor.minimap.renderCharacters": false,
-  "editor.minimap.autohide": true,
+  "editor.minimap.autohide": "mouseover",
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorWidth": 3,
@@ -41,9 +42,7 @@
   "editor.formatOnSave": true,
   "editor.wordWrap": "wordWrapColumn",
   "editor.wordWrapColumn": 80,
-  "editor.rulers": [
-    80
-  ],
+  "editor.rulers": [80],
   "editor.wrappingIndent": "same",
   "editor.detectIndentation": false,
   "editor.tabSize": 2,
@@ -52,6 +51,11 @@
   "editor.autoClosingBrackets": "always",
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.parameterHints.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  // workbench
   "workbench.colorTheme": "Atom One Dark",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
@@ -74,6 +78,17 @@
   "github.copilot.renameSuggestions.triggerAutomatically": false,
   "github.copilot.enable": {
     "*": true,
-    "dotenv": false,
+    "dotenv": false
   },
+  // Search settings
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.next": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/coverage": true
+  }
 }
