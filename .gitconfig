@@ -6,3 +6,7 @@
 	a = add .
 	l = log --oneline
 	cm = commit -m
+[core]
+	editor = vim
+[init]
+	defaultBranch = develop
